@@ -22,10 +22,9 @@ Model Performance Metrics: Evaluate models using performance metrics like MAE, R
 5. Creating Trading Strategy
 Define trading strategy rules; buy and sell signals 
 Trade Simulation and Strategy Performance Metrics
-6. Result and Discussion
+6. Trading Strategy Performance Evaluation
 Analyze the results and compare them with existing literature.
 Limitations and Future work
-Discuss the limitations of the study and suggest areas for improvement.
 7. Conclusion
 Summary of Achievements
 Reflection
@@ -42,9 +41,10 @@ Technical Indicators are calculated and added to the data to inrease the robustn
 <h6>Install or use any Python IDE preferably Google Colab or Jupyter notebook.</h6>
 
 <h6>Install any required Python library packages for EDA, Model Development, and Performance Evaluation, preferably using pip, pip install -r requirements.txt</h6>
-Libraries: pandas, numpy, scikit-learn, keras, matplotlib, tensorflow, joblib.
+<h6>Libraries: pandas, numpy, scikit-learn, keras, matplotlib, tensorflow, joblib.</h6>
 
-**Result**
+**Results**
+<h6>This project demonstrated that integrating machine learning models with traditional technical indicators can improve Forex trading strategies. The GRU, XGBoost, and GPR models each contributed valuable insights, with the GPR model particularly excelling in maximizing returns. The project successfully met its goal by developing and evaluating these models, highlighting their potential in algorithmic trading.</h6>
 
 **How to Use the Project**
 
