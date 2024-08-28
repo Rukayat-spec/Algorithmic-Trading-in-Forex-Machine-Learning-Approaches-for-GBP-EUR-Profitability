@@ -6,15 +6,45 @@
 
 <h6> Forex trading involves the exchange of currency pairs, aiming to profit from changes in exchange rates. Algorithmic trading leverages computer programs to execute trades based on predefined rules, often informed by historical data and predictive models. This project focuses on creating and assessing algorithmic trading strategies for the GBP/EUR currency pair. It will utilize machine learning models such as Gated Recurrent Unit(GRU), Extreme Gradient Boosting (XGBoost), and Gaussian Processg to predict market trends and improve trading outcomes. The strategies will be evaluated through backtesting on historical data and compared against baseline trading strategies to assess their profitability and robustness. This exploration aims to provide valuable insights into the efficacy of machine learning in developing profitable forex trading strategies.</h6>
 
+**Project Structure**
+1. Data Collection
+Forex Price Historical data dated from Septmeber 2003 to May 2024.
+2. Data cleaning, preprocessing, Exploratory Data Analaysis (EDA)
+Clean the dataset: Handle missing values, drop unused columns(Adjascent close and Volume).
+Compute and add technical indicators: EMA (50, 200), RSI (14), MACD (12, 26, 9), ADX to the historical dataset.
+Data Augmentation to increase records of dataset to increase the robustness of modelling.
+3. Model Development
+Dataset Split, create sequences, and scale data for modeling.
+Build and Train three models: GRU, XGBoost, and Guassian Process Regressor.
+Hyperparameter Tuning: Optimize model performance using Grid search Hyper parameter tuning for GRU model
+4. Model Performance Evaluation
+Model Performance Metrics: Evaluate models using performance metrics like MAE, RMSE,R2 Score, MSE, and MAPE.
+5. Creating Trading Strategy
+Define trading strategy rules; buy and sell signals 
+Trade Simulation and Strategy Performance Metrics
+6. Result and Discussion
+Analyze the results and compare them with existing literature.
+Limitations and Future work
+Discuss the limitations of the study and suggest areas for improvement.
+7. Conclusion
+Summary of Achievements
+Reflection
+Future research and Recommendations 
+
+
 **Data Overview**
 
-<h6> The dataset used in this project consists of 5402 records of historical GBP/EUR forex data spanning over 20 years. It includes the following columns: Date, Open, Close, Low, High, Adjacent Close, and Volume prices. The data has been ethically sourced from Yahoo Finance and preprocessed to ensure quality and accuracy. The dataset has been thoroughly checked to ensure GDPR compliance.</h6>
+<h6> The dataset used in this project consists of 5402 records of historical GBP/EUR forex data spanning over 20 years. It includes the following columns: Date, Open, Close, Low, High, Adjacent Close, and Volume prices. The data has been ethically sourced from Yahoo Finance and preprocessed to ensure quality and accuracy. The dataset has been thoroughly checked to ensure GDPR compliance.
+Technical Indicators are calculated and added to the data to inrease the robustness of the models. </h6>
 
 **Dependencies**
 
-<h6>Install or use any Python IDE preferably Google Colab.</h6>
+<h6>Install or use any Python IDE preferably Google Colab or Jupyter notebook.</h6>
 
 <h6>Install any required Python library packages for EDA, Model Development, and Performance Evaluation, preferably using pip, pip install -r requirements.txt</h6>
+Libraries: pandas, numpy, scikit-learn, keras, matplotlib, tensorflow, joblib.
+
+**Result**
 
 **How to Use the Project**
 
